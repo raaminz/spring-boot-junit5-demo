@@ -1,6 +1,5 @@
 package com.raminzare.demo.warehouse.model.dto;
 
-import com.raminzare.demo.warehouse.model.entity.Address;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

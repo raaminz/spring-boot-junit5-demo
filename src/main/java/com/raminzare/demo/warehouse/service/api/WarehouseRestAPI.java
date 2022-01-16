@@ -2,7 +2,6 @@ package com.raminzare.demo.warehouse.service.api;
 
 import com.raminzare.demo.warehouse.exception.WarehouseNotFoundException;
 import com.raminzare.demo.warehouse.model.dto.WarehouseDTO;
-import com.raminzare.demo.warehouse.model.entity.Warehouse;
 import com.raminzare.demo.warehouse.model.mapper.ObjectMapper;
 import com.raminzare.demo.warehouse.service.repo.WarehouseRepository;
 import org.springframework.http.HttpStatus;
@@ -25,7 +24,7 @@ public class WarehouseRestAPI {
 
     @ExceptionHandler(WarehouseNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public APIError ifNoWarehouseFound(){
+    public APIError ifNoWarehouseFound() {
         return new APIError(WarehouseNotFoundException.class.getSimpleName());
     }
 }
